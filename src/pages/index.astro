@@ -1,4 +1,6 @@
 ---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
 const pages = import.meta.glob('./**/*.md', { eager: true });
 
 type MarkdownModule = {
@@ -24,24 +26,14 @@ const urls = Object.entries(pages).map(([path, mod]) => {
 });
 ---
 
-<html lang="ja">
-	<head>
-		<meta charset="utf-8" />
-		<!-- <link rel="icon" type="image/svg+xml" href="/favicon.svg" /> -->
-		<link rel="icon" href="/favicon.png" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Linuxサークル カンファレンスinfo</title>
-	</head>
-	<body>
-		<h1>TID Linuxサークル カンファレンス掲示板</h1>
-    <p>このサイトはTIDのLinuxサークル主催のカンファレンスについての情報を提供します。</p>
-    <ul>
-      {urls.map((page) => (
-        <li>
-          <a href={page.url}>{page.title ?? page.url}</a>
-        </li>
-      ))}
-    </ul>
-	</body>
-</html>
+<BaseLayout title="Linuxサークル カンファレンスinfo">
+  <h1>TID Linuxサークル カンファレンス掲示板</h1>
+  <p>このサイトはTIDのLinuxサークル主催のカンファレンスについての情報を提供します。</p>
+  <ul>
+    {urls.map((page) => (
+      <li>
+        <a href={page.url}>{page.title ?? page.url}</a>
+      </li>
+    ))}
+  </ul>
+</BaseLayout>

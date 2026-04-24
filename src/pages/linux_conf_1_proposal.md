@@ -3,6 +3,8 @@ title: "カンファレンス#1 なぜ私はLinuxを使っているのか?"
 layout: ../layouts/BaseLayout.astro
 ---
 
+# #1 なぜ私はLinuxを使っているのか?
+
 ## テーマ
 
 **なぜ私はLinuxを使っているのか?**  
