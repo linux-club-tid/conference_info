@@ -1,17 +1,46 @@
 ---
+const pages = import.meta.glob('./**/*.md', { eager: true });
 
+type MarkdownModule = {
+  frontmatter: {
+    title?: string;
+    draft?: boolean;
+    date?: string;
+  };
+};
+
+const urls = Object.entries(pages).map(([path, mod]) => {
+  const module = mod as MarkdownModule;
+
+  const url = path
+    .replace('./', '/')
+    .replace('/index.md', '/')
+    .replace('.md', '');
+
+  return {
+    url,
+    ...module.frontmatter,
+  };
+});
 ---
 
-<html lang="en">
+<html lang="ja">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
+		<!-- <link rel="icon" type="image/svg+xml" href="/favicon.svg" /> -->
+		<link rel="icon" href="/favicon.png" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>Linuxサークル カンファレンスinfo</title>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<h1>TID Linuxサークル カンファレンス掲示板</h1>
+<ul>
+  {urls.map((page) => (
+    <li>
+      <a href={page.url}>{page.title ?? page.url}</a>
+    </li>
+  ))}
+</ul>
 	</body>
 </html>
