@@ -35,12 +35,13 @@ const urls = Object.entries(pages).map(([path, mod]) => {
 	</head>
 	<body>
 		<h1>TID Linuxサークル カンファレンス掲示板</h1>
-<ul>
-  {urls.map((page) => (
-    <li>
-      <a href={page.url}>{page.title ?? page.url}</a>
-    </li>
-  ))}
-</ul>
+    <p>このサイトはTIDのLinuxサークル主催のカンファレンスについての情報を提供します。</p>
+    <ul>
+      {urls.map((page) => (
+        <li>
+          <a href={page.url}>{page.title ?? page.url}</a>
+        </li>
+      ))}
+    </ul>
 	</body>
 </html>
