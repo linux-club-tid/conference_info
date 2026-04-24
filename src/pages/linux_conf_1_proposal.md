@@ -5,6 +5,14 @@ layout: ../layouts/BaseLayout.astro
 
 # #1 なぜ私はLinuxを使っているのか?
 
+## 概要
+
+登壇形式でのLinuxおよび関連イベントです。
+
+新たに1年生も入ったこともあるので、Linuxビギナーに向けた内容を検討しています。
+
+長さは1登壇で5-15分を想定しています。
+
 ## テーマ / theme
 
 **なぜ私はLinuxを使っているのか?**  
@@ -14,10 +22,11 @@ layout: ../layouts/BaseLayout.astro
 
 未定。4月末~5月中旬。
 
+各学年の時間割を見たところ、安定してメンバーの空く場所が水曜か金曜の5限しかないため、難航してます。
+
 ## 登壇内容 / stages
 
-手動更新のため反映にラグがあります(｡>ㅅ<｡)՞՞。また内容については変更される可能性があります。
-1つの登壇は5~15分程度を予定しています。
+手動更新のため反映にラグがあります(｡>ㅅ<｡)՞՞。また内容については変更される可能性があります。1人の登壇は5~15分程度を予定しています。
 
 - 「なぜ私はLinuxを使っているのか?」 -- Linuxビギナーに捧げるペンギンOSの正体
     - Linuxの概要とVimについて
@@ -28,8 +37,14 @@ layout: ../layouts/BaseLayout.astro
 
 ## 登壇の申し込み / application
 
-登壇の申し込みは[こちら](https://docs.google.com/forms/d/e/1FAIpQLSezVLR44Uk-bn4i0FdgjNYP__2-4skL0xsjvq9yuLq8eh8Vag/viewform?usp=publish-editor)に。
+登壇者はLinuxサークルに限りません。ただ内容はLinuxに関することに限定します。長さは1登壇で5-15分を想定しています。
+
+登壇以外については申し込み不要です。
+
+登壇の申し込み👇。日程が不明にためドタキャンOKです。
+[こちら(Google formです)](https://docs.google.com/forms/d/e/1FAIpQLSezVLR44Uk-bn4i0FdgjNYP__2-4skL0xsjvq9yuLq8eh8Vag/viewform?usp=publish-editor)に。
 
 ## 編集履歴
 
 - Apr24-21:13: 登壇内容を更新
+- Apr24-21:22: 説明を追加
