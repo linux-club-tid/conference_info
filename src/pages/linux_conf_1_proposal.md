@@ -1,5 +1,5 @@
 ---
-title: "カンファレンス#1 なぜ私はLinuxを使っているのか?"
+title: "#1 なぜ私はLinuxを使っているのか?"
 layout: ../layouts/BaseLayout.astro
 ---
 
