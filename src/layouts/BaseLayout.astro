@@ -30,6 +30,10 @@ const title = frontmatter?.title || Astro.props.title;
     color: #333;
     margin: 1rem 2rem 1rem;
 
+    main {
+      max-width: 860px;
+    }
+
     h1 {
       color: #333;
     }
@@ -41,6 +45,7 @@ const title = frontmatter?.title || Astro.props.title;
 
     p {
       padding-left: 0.6rem;
+      padding-right: 0.6rem;
       color: var(--text);
     }
   }

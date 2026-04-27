@@ -38,13 +38,14 @@ layout: ../layouts/BaseLayout.astro
 ## 登壇の申し込み / application
 
 登壇者はLinuxサークルに限りません。ただ内容はLinuxに関することに限定します。長さは1登壇で5-15分を想定しています。
-
 登壇以外については申し込み不要です。
 
 登壇の申し込み👇。日程が不明にためドタキャンOKです。
-[こちら(Google formです)](https://docs.google.com/forms/d/e/1FAIpQLSezVLR44Uk-bn4i0FdgjNYP__2-4skL0xsjvq9yuLq8eh8Vag/viewform?usp=publish-editor)に。
+
+[こちら(Google form)](https://docs.google.com/forms/d/e/1FAIpQLSezVLR44Uk-bn4i0FdgjNYP__2-4skL0xsjvq9yuLq8eh8Vag/viewform?usp=publish-editor)
 
 ## 編集履歴
 
 - Apr24-21:13: 登壇内容を更新
 - Apr24-21:22: 説明を追加
+- Apr27-15:56: サイトのレイアウト変更と修正
