@@ -18,11 +18,12 @@ layout: ../layouts/BaseLayout.astro
 **なぜ私はLinuxを使っているのか?**  
   -- Linuxビギナーに捧げるペンギンOSの正体
 
-## 日程 / schedule
+## 日程-場所 / schedule-venue
 
 ~~未定。4月末~5月中旬。~~
+~~現在5/8日を予定。場所の確保中...~~
 
-現在5/8日を予定。場所の確保中...
+2026 5/8日。東京情報デザイン専門職大学N305教室。
 
 ## 登壇内容 / stages
 
@@ -40,7 +41,7 @@ layout: ../layouts/BaseLayout.astro
 登壇者はLinuxサークルに限りません。ただ内容はLinuxに関することに限定します。長さは1登壇で5-15分を想定しています。
 登壇以外については申し込み不要です。
 
-登壇の申し込み👇。日程が不明にためドタキャンOKです。
+登壇の申し込み👇。~~日程が不明にためドタキャンOKです。~~ 日程が決定したためドタキャンWelcomeではなくなりました。ただ連絡いただければ対応しますのでお気軽に申し込みください。
 
 [こちら(Google form)](https://docs.google.com/forms/d/e/1FAIpQLSezVLR44Uk-bn4i0FdgjNYP__2-4skL0xsjvq9yuLq8eh8Vag/viewform?usp=publish-editor)
 
@@ -50,3 +51,5 @@ layout: ../layouts/BaseLayout.astro
 - Apr24-21:22: 説明を追加
 - Apr27-15:56: サイトのレイアウト変更と修正
 - Apr28-21:40: 日程情報について更新
+- Apr29-19:45: 場所について更新
+
