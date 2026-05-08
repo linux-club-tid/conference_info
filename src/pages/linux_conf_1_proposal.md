@@ -37,6 +37,9 @@ layout: ../layouts/BaseLayout.astro
 - 「なぜプログラマは過激になっていくのか?」 -- あるいは宗教の話
     - Linuxにまつわる宗教とVimについて
     - by 内山
+- 「Winの重さと比較するLinuxの軽さについて～」
+    - Windowsが近年RAM泥棒なこと、最近のハードウェア高騰からみる２台目PCに対するLinuxの有用性/軽量比較等...
+    - by @zakkth/@.zakkth
 
 ## 登壇の申し込み / application
 
