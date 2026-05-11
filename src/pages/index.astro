@@ -1,7 +1,7 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
+import BaseLayout from "../layouts/BaseLayout.astro";
 
-const pages = import.meta.glob('./**/*.md', { eager: true });
+const pages = import.meta.glob("./**/*.md", { eager: true });
 
 type MarkdownModule = {
   frontmatter: {
@@ -11,29 +11,38 @@ type MarkdownModule = {
   };
 };
 
-const urls = Object.entries(pages).map(([path, mod]) => {
-  const module = mod as MarkdownModule;
+const urls = Object.entries(pages)
+  .map(([path, mod]) => {
+    const module = mod as MarkdownModule;
 
-  const url = path
-    .replace('./', '/')
-    .replace('/index.md', '/')
-    .replace('.md', '');
+    const url = path
+      .replace("./", "/")
+      .replace("/index.md", "/")
+      .replace(".md", "");
 
-  return {
-    url,
-    ...module.frontmatter,
-  };
-});
+    return {
+      url,
+      ...module.frontmatter,
+    };
+  })
+  .filter((page) => !page.draft)
+  .sort((a, b) =>
+    (b.date ?? "1970-01-01").localeCompare(a.date ?? "1970-01-01"),
+  );
 ---
 
 <BaseLayout title="Linuxサークル カンファレンスinfo">
   <h1>TID Linuxサークル カンファレンス掲示板</h1>
-  <p>このサイトはTIDのLinuxサークル主催のカンファレンスについての情報を提供します。</p>
+  <p>
+    このサイトはTIDのLinuxサークル主催のカンファレンスについての情報を提供します。
+  </p>
   <ul>
-    {urls.map((page) => (
-      <li>
-        <a href={page.url}>{page.title ?? page.url}</a>
-      </li>
-    ))}
+    {
+      urls.map((page) => (
+        <li>
+          <a href={page.url}>{page.title ?? page.url}</a>
+        </li>
+      ))
+    }
   </ul>
 </BaseLayout>

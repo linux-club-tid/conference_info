@@ -1,6 +1,7 @@
 ---
 title: "#1 なぜ私はLinuxを使っているのか?"
 layout: ../layouts/BaseLayout.astro
+date: 2026-04-24
 ---
 
 # #1 なぜ私はLinuxを使っているのか?
@@ -48,7 +49,15 @@ layout: ../layouts/BaseLayout.astro
 
 登壇の申し込み👇。~~日程が不明にためドタキャンOKです。~~ 日程が決定したためドタキャンWelcomeではなくなりました。ただ連絡いただければ対応しますのでお気軽に申し込みください。
 
-[こちら(Google form)](https://docs.google.com/forms/d/e/1FAIpQLSezVLR44Uk-bn4i0FdgjNYP__2-4skL0xsjvq9yuLq8eh8Vag/viewform?usp=publish-editor)
+申し込みは終了しました。
+
+~~こちら(Google form)~~
+
+## アーカイブ
+
+[YouTube](https://www.youtube.com/watch?v=b8H7mKntDtA)
+
+[Geminiによるテキストアーカイブ](https://conference-info-9m8.pages.dev/linux_conf_1_proposal_gem_repo/)
 
 ## 編集履歴
 
@@ -59,3 +68,4 @@ layout: ../layouts/BaseLayout.astro
 - Apr29-19:45: 場所について更新
 - Apr29-21:45: 登壇内容とタイムテーブルを更新
 - May8-16:35:  登壇内容の更新
+- May11-12-21: アーカイブの追加
