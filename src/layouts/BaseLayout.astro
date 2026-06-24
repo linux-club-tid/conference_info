@@ -4,6 +4,22 @@ import Footer from "../components/Footer.astro";
 
 const { frontmatter } = Astro.props;
 const title = frontmatter?.title || Astro.props.title;
+const rawDate = frontmatter?.date;
+const date = rawDate
+  ? new Intl.DateTimeFormat("ja-JP", {
+      timeZone: "UTC",
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+    }).format(new Date(rawDate))
+  : undefined;
+const description = date
+  ? `開催日: ${date}`
+  : (Astro.props.description ?? "TID Linuxサークルのカンファレンス情報");
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
+const routeName = Astro.url.pathname.replace(/^\/+|\/+$/g, "") || "index";
+const ogImage = new URL(`/og/${routeName}.png`, Astro.site);
+const isArticle = Boolean(frontmatter);
 ---
 
 <html lang="ja">
@@ -12,6 +28,26 @@ const title = frontmatter?.title || Astro.props.title;
     <link rel="icon" href="/favicon.png" />
     <meta name="viewport" content="width=device-width" />
     <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalUrl} />
+    <meta property="og:type" content={isArticle ? "article" : "website"} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta
+      property="og:site_name"
+      content="TID Linuxサークル カンファレンスinfo"
+    />
+    <meta property="og:locale" content="ja_JP" />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:alt" content={`${title} — ${description}`} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
   </head>
   <body>
     <Header />

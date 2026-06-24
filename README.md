@@ -2,6 +2,13 @@
 
 - [ ] Add Header
 
+## OGP images
+
+Every Markdown page must define `title` and `date` in its frontmatter. Running
+`bun run build` builds the Astro site, then generates a 1200×630 image from
+those values directly in `dist/og/`. To regenerate only the images after a
+build, run `bun run generate:og`.
+
 ---
 
 # Astro Starter Kit: Minimal
@@ -35,9 +42,9 @@ Any static assets, like images, can be placed in the `public/` directory.
 
 All commands are run from the root of the project, from a terminal:
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `bun install`             | Installs dependencies                            |
+| Command               | Action                                           |
+| :-------------------- | :----------------------------------------------- |
+| `bun install`         | Installs dependencies                            |
 | `bun dev`             | Starts local dev server at `localhost:4321`      |
 | `bun build`           | Build your production site to `./dist/`          |
 | `bun preview`         | Preview your build locally, before deploying     |
